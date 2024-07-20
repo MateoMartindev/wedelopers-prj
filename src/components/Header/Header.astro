@@ -1,31 +1,38 @@
 ---
 import ButtonMenuHeader from "./ButtonMenuHeader.astro"
+import BoxNav from "./BoxNav.astro"
 ---
-
-<nav class="px-10 pt-5 mx-96 grid grid-rows-1 grid-cols-[auto_1fr_auto] gap-4">
-    <div class="h-11 px-[14px] py-[5px] items-center border-solid border border-gray-300 rounded-xl content-center ">
-        <a href="#">
-            <h1 class="text-base">Wedelopers</h1>
-        </a>
-    </div>
-    <div>
-        <div class="h-11 flex border boder-solid border-gray-300 rounded-xl px-[5px] py-[5px] items-center">
-            <ButtonMenuHeader class="px-3 h-9">
-                Producto
-            </ButtonMenuHeader>
-            <ButtonMenuHeader>
-                Servicios
-            </ButtonMenuHeader>
-            <ButtonMenuHeader>
-                Contacto
-            </ButtonMenuHeader>
-            <ButtonMenuHeader>
-                Nosotros
-            </ButtonMenuHeader>
+<div class="box-border">
+    <nav class="px-10 pt-5 mx-auto lg:mx-96 grid grid-rows-1 grid-cols-[auto_1fr_auto] gap-4 max-w-full ">
+        <BoxNav class="px-[14px]">
+            <a href="#">
+                <h1 class="text-base">Wedelopers</h1>
+            </a>
+        </BoxNav>
+        <div class="flex">
+            <BoxNav class="px-[5px]">
+                <ButtonMenuHeader class="px-3 h-9">
+                    Producto
+                </ButtonMenuHeader>
+                <ButtonMenuHeader>
+                    Servicios
+                </ButtonMenuHeader>
+                <ButtonMenuHeader>
+                    Contacto
+                </ButtonMenuHeader>
+                <ButtonMenuHeader>
+                    Nosotros
+                </ButtonMenuHeader>
+            </BoxNav>
         </div>
-    </div>
-    <div>
-        
-    </div>
+        <div class="flex">
+            <BoxNav class>
+                Producto
+            </BoxNav>
+            <BoxNav>
+                Whatsapp
+            </BoxNav>
+        </div>
 
-</nav>
+    </nav>
+</div>
