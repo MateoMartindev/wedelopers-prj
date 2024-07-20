@@ -6,7 +6,7 @@ import BoxNav from "./BoxNav.astro"
     <nav class="px-10 pt-5 mx-auto lg:mx-96 grid grid-rows-1 grid-cols-[auto_1fr_auto] gap-4 max-w-full ">
         <BoxNav class="px-[14px]">
             <a href="#">
-                <h1 class="text-base">Wedelopers</h1>
+                <h1 class="text-lg font-bold ">Wedelopers</h1>
             </a>
         </BoxNav>
         <div class="flex">
@@ -25,13 +25,17 @@ import BoxNav from "./BoxNav.astro"
                 </ButtonMenuHeader>
             </BoxNav>
         </div>
-        <div class="flex">
-            <BoxNav class>
-                Producto
+        <div class="flex gap-3">
+            <BoxNav class="px-3 gap-1">
+                <ButtonMenuHeader href="">
+                    Producto
+                </ButtonMenuHeader>
+                <div>
+                <button type="button" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center "><span class="text-base"> Whatsapp</span></button>
+                </div>
+                
             </BoxNav>
-            <BoxNav>
-                Whatsapp
-            </BoxNav>
+
         </div>
 
     </nav>
