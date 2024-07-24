@@ -2,16 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import Aside from '../components/Aside/Aside.astro';
 import Header from '../components/Header/Header.astro';
+import MainPage from '../components/Main/MainPage.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
 	
 		<Aside/>
 		<Header/>
-	<main class="inline-[100vw]">
-		
+	<main class="[inline-size:100vw]">
+		<MainPage>
+
+		</MainPage>
 
 	</main>
+	<h1>sadas</h1>
 </Layout>
 
 <style>
