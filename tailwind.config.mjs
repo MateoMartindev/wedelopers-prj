@@ -5,38 +5,9 @@ export default {
 	  extend: {
 		colors: {
 		  'text-1': '#24223e',
+		  'colorsp1': '#34afd7'
 		},
-		typography: (theme) => ({
-		  DEFAULT: {
-			css: {
-			  h1: {
-				fontSize: 'initial',
-				fontWeight: 'initial',
-			  },
-			  h2: {
-				fontSize: 'initial',
-				fontWeight: 'initial',
-			  },
-			  h3: {
-				fontSize: 'initial',
-				fontWeight: 'initial',
-			  },
-			  h4: {
-				fontSize: 'initial',
-				fontWeight: 'initial',
-			  },
-			  h5: {
-				fontSize: 'initial',
-				fontWeight: 'initial',
-			  },
-			  h6: {
-				fontSize: 'initial',
-				fontWeight: 'initial',
-			  },
-			},
-		  },
-		}),
+		
 	  },
-	},
-	plugins: [require('@tailwindcss/typography')],
+	}
   }
